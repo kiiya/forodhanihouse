@@ -1,13 +1,13 @@
 <?php
 
 	if (!session_id()) @session_start();
-	require_once 'php/formr/class.formr.php';	
+	require_once 'php/formr/class.formr.php';
 	require_once 'php/FlashMessages.php';
-	require 'php/PHPMailer/PHPMailerAutoload.php';	
+	require 'php/PHPMailer/PHPMailerAutoload.php';
 	$form = new Formr();
 	$form->required = 'prenom,nom,email';
 	$msg = new \Plasticbrain\FlashMessages\FlashMessages();
-	
+
 	if ($form->submit()) {
 		// $admin_email = "isabelle.simon@forodhanihouse.com";
 		$admin_email = "erick@eatout.co.ke";
@@ -28,20 +28,20 @@
 			            $message;
 
 			if ($form->post('store66') == "") {
-				$mail = new PHPMailer;
+				$mail = new PHPMailer(true);
 				// $mail->IsSMTP();
 				$mail->AddReplyTo($email, $first_name . " " . $last_name);
 				$mail->SetFrom($admin_email);
 				$mail->AddAddress($admin_email);
 				$mail->Subject = $subject;
 				$mail->Body = $message;
-				$mail->Send();	
+				$mail->Send();
 				$msg->success('Your message was sent successfully.');
 			}
 
 			header('Location: ' . $_SERVER['PHP_SELF']);
 			exit;
-		} 
+		}
 	}
 ?>
 <!DOCTYPE html>
@@ -52,7 +52,7 @@
 	<link href="/assets/favicon.ico" type="image/x-icon" rel="icon"><link href="/assets/favicon.ico" type="image/x-icon" rel="shortcut icon"><meta name="robots" content="index,follow,all"><meta name="description" content="Exclusive Holiday House with stunning 270° sea-views, direct on Shela Beach, in Lamu island, off the east coast of Kenya. Fully staffed, an excellent cook, whether with family or friends, you&#39;ll be pampered here!"><meta name="keywords" content="Forodhani House Shela Beach Lamu Island Kenya Coast Exclusive Luxury Holidays Rental">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
 
-	
+
 	<link rel="stylesheet" type="text/css" href="/assets/owl.carousel.min.css" media="all">
 	<link rel="stylesheet" type="text/css" href="/assets/A.pikaday-package.css,q1423157385.pagespeed.cf.ftYionlt_a.css" media="all">
 	<link rel="stylesheet" type="text/css" href="/assets/A.pikaday-responsive.css,q1423157385.pagespeed.cf.QP8LVJOtxm.css" media="all">
@@ -71,10 +71,10 @@
 
 	<body id="contacts" class="index langEn">
 
-		
+
 		<header class="block-header" role="banner">
 			<div class="inner">
-				
+
 <div class="container">
 	<div class="row">
 
@@ -93,7 +93,7 @@
 </div>			</div>
 		</header>
 
-		
+
 
 <div class="block-carousel noInfo">
 
@@ -103,7 +103,7 @@
 			<div class="wrapper">
 				<div class="viewport">
 
-					<ul id="big-carousel" class="owl-carousel">						
+					<ul id="big-carousel" class="owl-carousel">
 						<li class="item item-1"><img src="/assets/contact_1.jpg" alt=""></li>
 						<li class="item item-2"><img src="/assets/contact_2.jpg" alt=""></li>
 						<li class="item item-3"><img src="/assets/contact_3.jpg" alt=""></li>
@@ -150,7 +150,7 @@
 </div>
 		<main class="block-main" role="main">
 
-			
+
 				<div class="page-content">
 
 					<div class="container">
@@ -158,9 +158,9 @@
 
 							<div class="column column-3 main">
 
-								
-								
-								
+
+
+
 	<div class="block-form block-contact">
 
 		<h2 class="page-title level-2"><span>Contact</span></h2>
@@ -208,14 +208,14 @@
 
 			</fieldset>
 
-			
+
 			<fieldset class="fieldset">
 
 				<legend class="page-title level-3"><span>Your query</span></legend>
 
 					<div class="input textarea">
 						<label for="ContactCommentaire">Query</label>
-						<textarea name="commentaire" cols="30" rows="6" id="ContactCommentaire"><?php echo $form->value('commentaire'); ?></textarea>											
+						<textarea name="commentaire" cols="30" rows="6" id="ContactCommentaire"><?php echo $form->value('commentaire'); ?></textarea>
 					</div>
 
 			</fieldset>
@@ -232,7 +232,7 @@
 	</div>
 							</div>
 
-							
+
 <aside class="column column-1 aside">
 
 	<div class="isBlock type-1 block-hot">
@@ -246,7 +246,7 @@
 				</p>
 
 										<p class="action"><a href="/information.html#1" class="btn sm"><span>Agenda</span></a></p>
-				
+
 
 			</div>
 		</div>
@@ -276,7 +276,7 @@
 
 				<div class="page-title title level-3"><span>Connect with us</span></div>
 
-				
+
 
           <ul class="social-links">
 
@@ -315,13 +315,13 @@
 
 				</div>
 
-			
+
 		</main>
 
 		<footer class="block-footer" role="contentinfo">
 			<div class="inner">
 
-				
+
 
 <div class="container">
 	<div class="row">
@@ -355,23 +355,23 @@
 
 			<ul class="languages">
 
-				
+
 				<li class="lang francais">
 					<a href="/fr/contact.php" title="Français">fr</a>				</li>
 
-			
+
 				<li class="lang english active">
 					<a href="/contact.php" title="English">en</a>				</li>
 
-			
+
 		</ul>
 
 	</div>
 
-	
+
 	<script type="text/javascript" src="/assets/lib.js,q1434119458.pagespeed.jm.s335Z-N0fH.js"></script>
 	<script type="text/javascript" src="/assets/script.js"></script>
 
 				<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-21426855-1']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>
-				
+
 <script aria-hidden="true" type="application/x-lastpass" id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{(function() { for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; if (typeof(lastpass_f.lpsubmitorig2)=='object'){ continue;}lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ if (typeof(d.innerText) != 'undefined') { d.innerText=i.toString(); } else { d.textContent=i.toString(); } } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }})()}catch(e){}</script></body></html>

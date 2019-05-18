@@ -22,7 +22,7 @@
 		$departure = $form->post('date_depart');
 		if ($arrival != "") {
 			$arrival = date('d/m/Y', $arrival);
-		}		
+		}
 		if ($departure != "") {
 			$departure = date('d/m/Y', $departure);
 		}
@@ -49,12 +49,12 @@
 				$mail->AddAddress($admin_email);
 				$mail->Subject = $subject;
 				$mail->Body = $message;
-				$mail->Send();	
+				$mail->Send();
 				$msg->success('We have received your reservation.');
-			}			
+			}
 			header('Location: '.$_SERVER['PHP_SELF']);
 			exit;
-		} 
+		}
 	}
 ?>
 <!DOCTYPE html>
@@ -65,7 +65,7 @@
 	<link href="/assets/favicon.ico" type="image/x-icon" rel="icon"><link href="/assets/favicon.ico" type="image/x-icon" rel="shortcut icon"><meta name="robots" content="index,follow,all"><meta name="description" content=""><meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
 
-	
+
 	<link rel="stylesheet" type="text/css" href="/assets/owl.carousel.min.css" media="all">
 	<link rel="stylesheet" type="text/css" href="/assets/A.pikaday-package.css,q1423157385.pagespeed.cf.ftYionlt_a.css" media="all">
 	<link rel="stylesheet" type="text/css" href="/assets/A.pikaday-responsive.css,q1423157385.pagespeed.cf.QP8LVJOtxm.css" media="all">
@@ -84,10 +84,10 @@
 
 	<body id="reservation" class="index langEn">
 
-		
+
 		<header class="block-header" role="banner">
 			<div class="inner">
-				
+
 <div class="container">
 	<div class="row">
 
@@ -106,7 +106,7 @@
 </div>			</div>
 		</header>
 
-		
+
 
 <div class="block-carousel singleItem noInfo">
 
@@ -155,7 +155,7 @@
 </div>
 		<main class="block-main" role="main">
 
-			
+
 				<div class="page-content">
 
 					<div class="container">
@@ -163,9 +163,9 @@
 
 							<div class="column column-3 main">
 
-								
-								
-								
+
+
+
 	<div class="block-form block-booking">
 
 		<h2 class="page-title level-2"><span>Book now</span></h2>
@@ -249,7 +249,7 @@
 	</div>
 							</div>
 
-							
+
 <aside class="column column-1 aside">
 
 	<div class="isBlock type-1 block-hot">
@@ -263,7 +263,7 @@
 				</p>
 
 										<p class="action"><a href="/information.html#1" class="btn sm"><span>Agenda</span></a></p>
-				
+
 
 			</div>
 		</div>
@@ -293,7 +293,7 @@
 
 				<div class="page-title title level-3"><span>Connect with us</span></div>
 
-				
+
 
           <ul class="social-links">
 
@@ -332,13 +332,13 @@
 
 				</div>
 
-			
+
 		</main>
 
 		<footer class="block-footer" role="contentinfo">
 			<div class="inner">
 
-				
+
 
 <div class="container">
 	<div class="row">
@@ -372,23 +372,23 @@
 
 			<ul class="languages">
 
-				
+
 				<li class="lang francais">
 					<a href="/fr/reservation.php" title="Français">fr</a>				</li>
 
-			
+
 				<li class="lang english active">
 					<a href="/reservation.php" title="English">en</a>				</li>
 
-			
+
 		</ul>
 
 	</div>
 
-	
+
 	<script type="text/javascript" src="/assets/lib.js,q1434119458.pagespeed.jm.s335Z-N0fH.js"></script>
 	<script type="text/javascript" src="/assets/script.js"></script>
 
 				<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-21426855-1']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>
-				
+
 <script aria-hidden="true" type="application/x-lastpass" id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{(function() { for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; if (typeof(lastpass_f.lpsubmitorig2)=='object'){ continue;}lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ if (typeof(d.innerText) != 'undefined') { d.innerText=i.toString(); } else { d.textContent=i.toString(); } } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }})()}catch(e){}</script></body></html>
