@@ -1,0 +1,29 @@
+
+Redirect 301 /en/n/activities/n:83 http://forodhanihouse.com/activities.html
+Redirect 301 /en/n/lamu-archipelago/n:73 http://forodhanihouse.com/archipelago.html
+Redirect 301 /en/n/press-reviews/n:158 http://forodhanihouse.com/reviews.html
+Redirect 301 /en/n/information/n:68 http://forodhanihouse.com/information.html
+Redirect 301 /en/contacts/n:138 http://forodhanihouse.com/contact.php
+Redirect 301 /en/n/the-house/n:67 http://forodhanihouse.com/the-house.html
+Redirect 301 /en/reservation/n:198 http://forodhanihouse.com/reservation.php
+Redirect 301 /en/n/thank-you/n:193 http://forodhanihouse.com/thank-you.html
+
+Redirect 301 /apple-touch-icon-precomposed.png/n/activites/n:58 http://forodhanihouse.com/fr/activities.html
+Redirect 301 /fr/n/activites/n:58 http://forodhanihouse.com/fr/activities.html
+Redirect 301 /apple-touch-icon-precomposed.png/n/la-maison/n:144 http://forodhanihouse.com/fr/la-maison.html
+Redirect 301 /fr/n/la-maison/n:144 http://forodhanihouse.com/fr/la-maison.html
+Redirect 301 /fr/n/l-archipel/n:53 http://forodhanihouse.com/fr/l-archipel.html
+Redirect 301 /apple-touch-icon-precomposed.png/n/l-archipel/n:53 http://forodhanihouse.com/fr/l-archipel.html
+Redirect 301 /fr/n/on-en-parle/n:52 http://forodhanihouse.com/fr/en-parle.html
+Redirect 301 /apple-touch-icon-precomposed.png/n/on-en-parle/n:52 http://forodhanihouse.com/fr/en-parle.html
+Redirect 301 /fr/n/informations/n:185 http://forodhanihouse.com/fr/informations.html
+Redirect 301 /apple-touch-icon-precomposed.png/n/informations/n:185 http://forodhanihouse.com/fr/informations.html
+Redirect 301 /fr/contacts/n:95 http://forodhanihouse.com/fr/contact.php
+Redirect 301 /apple-touch-icon-precomposed.png/contacts/n:95 http://forodhanihouse.com/fr/contact.php
+Redirect 301 /fr/reservation/n:197 http://forodhanihouse.com/fr/reservation.php
+Redirect 301 /fr/n/remerciements/n:192 http://forodhanihouse.com/fr/remerciements.html
+Redirect 301 /apple-touch-icon-precomposed.png/n/remerciements/n:192 http://forodhanihouse.com/fr/remerciements.html
+Redirect 301 /fr/n/mentions-legales/n:98 http://forodhanihouse.com/fr/mentions-legales.html
+Redirect 301 /apple-touch-icon-precomposed.png/n/mentions-legales/n:98 http://forodhanihouse.com/fr/mentions-legales.html
+
+Redirect 301 /en http://forodhanihouse.com
