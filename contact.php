@@ -9,8 +9,7 @@
 	$msg = new \Plasticbrain\FlashMessages\FlashMessages();
 
 	if ($form->submit()) {
-		// $admin_email = "isabelle.simon@forodhanihouse.com";
-		$admin_email = "erick@eatout.co.ke";
+		$admin_email = "isabelle.simon@forodhanihouse.com";
 		$first_name = $form->post('prenom');
 		$last_name = $form->post('nom');
 		$email = $form->post('email','Email','valid_email');
@@ -29,12 +28,6 @@
 
 			if ($form->post('store66') == "") {
 				$mail = new PHPMailer(true);
-				// $mail->IsSMTP();
-				// $mail->Host = "smtp.gmail.com";
-				// $mail->SMTPAuth = true;
-				// $mail->Username = "kiiyaerick@gmail.com";
-				// $mail->Password = "16221992!Mail!Gmail";
-
 				$mail->isMail();
 				$mail->AddReplyTo($email, $first_name . " " . $last_name);
 				$mail->SetFrom($admin_email);
