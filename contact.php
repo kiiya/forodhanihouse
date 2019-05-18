@@ -29,7 +29,13 @@
 
 			if ($form->post('store66') == "") {
 				$mail = new PHPMailer(true);
-				$mail->IsSMTP();
+				// $mail->IsSMTP();
+				// $mail->Host = "smtp.gmail.com";
+				// $mail->SMTPAuth = true;
+				// $mail->Username = "kiiyaerick@gmail.com";
+				// $mail->Password = "16221992!Mail!Gmail";
+
+				$mail->isMail();
 				$mail->AddReplyTo($email, $first_name . " " . $last_name);
 				$mail->SetFrom($admin_email);
 				$mail->AddAddress($admin_email);
