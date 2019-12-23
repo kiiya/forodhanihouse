@@ -42,7 +42,7 @@
 
 			if ($form->post('store66') == "") {
 				$mail = new PHPMailer;
-				$mail->isMail();
+				$mail->isSMTP();
 				$mail->AddReplyTo($email, $first_name . " " . $last_name);
 				$mail->SetFrom($admin_email);
 				$mail->AddAddress($admin_email);
