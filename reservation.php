@@ -10,8 +10,7 @@
 	$msg = new \Plasticbrain\FlashMessages\FlashMessages();
 
 	if ($form->submit()) {
-//		$admin_email = "isabelle.simon@forodhanihouse.com";
-        $admin_email = "kiiyaerick@gmail.com";
+		$admin_email = "isabelle.simon@forodhanihouse.com";
 		$first_name = $form->post('prenom');
 		$last_name = $form->post('nom');
 		$email = $form->post('email','Email','valid_email');
