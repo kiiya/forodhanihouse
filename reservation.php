@@ -1,4 +1,6 @@
 <?php
+    require_once 'vendor/autoload.php';
+
 	if (!session_id()) @session_start();
 	require_once 'php/formr/class.formr.php';
 	require_once 'php/FlashMessages.php';
@@ -9,6 +11,7 @@
 
 	if ($form->submit()) {
 		$admin_email = "isabelle.simon@forodhanihouse.com";
+//        $admin_email = "kiiyaerick@gmail.com";
 		$first_name = $form->post('prenom');
 		$last_name = $form->post('nom');
 		$email = $form->post('email','Email','valid_email');
@@ -43,6 +46,12 @@
 			if ($form->post('store66') == "") {
 				$mail = new PHPMailer;
 				$mail->isSMTP();
+                $mail->Host = 'smtp.gmail.com';
+                $mail->SMTPAuth = true;
+                $mail->SMTPSecure = 'tls';
+                $mail->Username = 'kiiyaerick@gmail.com';
+                $mail->Password = '16221992!Mail!Gmail';
+                $mail->Port = 587;
 				$mail->AddReplyTo($email, $first_name . " " . $last_name);
 				$mail->SetFrom($admin_email);
 				$mail->AddAddress($admin_email);

@@ -27,15 +27,21 @@
 			            $message;
 
 			if ($form->post('store66') == "") {
-				$mail = new PHPMailer(true);
-				$mail->isSMTP();
-				$mail->AddReplyTo($email, $first_name . " " . $last_name);
-				$mail->SetFrom($admin_email);
-				$mail->AddAddress($admin_email);
-				$mail->Subject = $subject;
-				$mail->Body = $message;
-				$mail->Send();
-				$msg->success('Your message was sent successfully.');
+                $mail = new PHPMailer;
+                $mail->isSMTP();
+                $mail->Host = 'smtp.gmail.com';
+                $mail->SMTPAuth = true;
+                $mail->SMTPSecure = 'tls';
+                $mail->Username = 'kiiyaerick@gmail.com';
+                $mail->Password = '16221992!Mail!Gmail';
+                $mail->Port = 587;
+                $mail->AddReplyTo($email, $first_name . " " . $last_name);
+                $mail->SetFrom($admin_email);
+                $mail->AddAddress($admin_email);
+                $mail->Subject = $subject;
+                $mail->Body = $message;
+                $mail->Send();
+                $msg->success('We have received your reservation.');
 			}
 
 			header('Location: ' . $_SERVER['PHP_SELF']);
